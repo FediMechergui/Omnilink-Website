@@ -5,9 +5,9 @@ const AboutUs = () => {
     <div className="about-us-section">
       <h1>About Us</h1>
       <div className="tags">
-        <span className="tag innovation">INNOVATION</span>
-        <span className="tag secured">SECURED</span>
-        <span className="tag trust">TRUST</span>
+        <div className="tag">INNOVATION</div>
+        <div className="tag">SECURED</div>
+        <div className="tag">TRUST</div>
       </div>
       <div className="description">
         <p>
