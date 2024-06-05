@@ -1,0 +1,51 @@
+.about-us-section {
+    font-family: 'Arial, sans-serif';
+    color: #29337A;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tag {
+    background-color: linear-gradient(180deg, #033CB2 0%, #788FC0 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tag.secured {
+    background-color: linear-gradient(90deg, #033CB2 0%, #788FC0 100%);
+  }
+  
+  .tag.trust {
+    background-color: linear-gradient(180deg, #033CB2 0%, #788FC0 100%);
+  }
+  
+  .description {
+    background-color: linear-gradient(180deg, #033CB2 0%, #788FC0 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #29337A;
+  }
+  
