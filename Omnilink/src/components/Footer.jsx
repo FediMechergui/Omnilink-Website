@@ -1,6 +1,9 @@
 import './Footer.css';
 import bannerImage from '../assets/be-hold.png'; 
-import smallLogo from '../assets/logo-white.png'; 
+import smallLogo from '../assets/logo-white.png';
+import facebookIcon from '../assets/facebook-logo.png';
+import instagramIcon from '../assets/instagram-logo.png';
+import linkedinIcon from '../assets/linkedin-logo.png';
 
 const Footer = () => {
   return (
@@ -11,9 +14,9 @@ const Footer = () => {
         <img src={smallLogo} alt="Omnilink Logo" className="footer-logo-small" />
         <p className="footer-copyright">© 2024, All Rights Reserved</p>
         <div className="footer-social">
-          <a href="https://facebook.com" className="social-link">Facebook</a>
-          <a href="https://instagram.com" className="social-link">Instagram</a>
-          <a href="https://linkedin.com" className="social-link">LinkedIn</a>
+        <a href="https://facebook.com"><img src={facebookIcon} alt="Facebook" /></a>
+        <a href="https://instagram.com"><img src={instagramIcon} alt="Instagram" /></a>
+        <a href="https://linkedin.com"><img src={linkedinIcon} alt="LinkedIn" /></a>
         </div>
       </div>
     </footer>

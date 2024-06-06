@@ -6,9 +6,10 @@ const MainSection = () => {
     <section className="main-section">
       <div className="content">
         <h2>Unlocking Potential, Powering Progress</h2>
+        <hr className="separator" />
         <h1>We create projects based on AI/IOT</h1>
         <p>
-          We specialize in developing and implementing innovative solutions that leverage the power of AI and enhance IoT ecosystems.
+          We specialize in developing and implementing innovative solutions that leverage the power of <strong>AI</strong> and enhance <strong>IoT</strong> ecosystems.
         </p>
         <button>Contact Us</button>
       </div>

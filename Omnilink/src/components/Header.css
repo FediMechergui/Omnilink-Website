@@ -3,20 +3,32 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end; 
   padding: 10px 20px;
   font-family: 'Roboto', sans-serif;
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
+}
+
+.navigation {
+  flex-grow: 1;
+  margin-left: 20px;
 }
 
 .navigation a {
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   color: #003399;
-  font-weight: 700; /* Bold */
+  font-weight: 700;
+  font-size: 20px;
+  display: inline-block; 
+}
+
+.social-icons {
+  display: flex;
+  align-items: flex-end; 
 }
 
 .social-icons a {
@@ -25,5 +37,5 @@
 }
 
 .social-icons img {
-  height: 20px;
+  height: 25px;
 }
