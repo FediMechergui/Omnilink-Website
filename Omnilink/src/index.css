@@ -40,7 +40,7 @@ section {
 
 .services-section {
   height: calc(100vh - 40px); 
-  width: 100%;
+  width: 95%;
   margin-top: 60px; 
   display: flex;
   flex-direction: column;
@@ -48,8 +48,11 @@ section {
   justify-content: left;
 }
 
-.footer-section {
+.footer {
   width: 100%;
   background-color: transparent;
   padding: 20px 0;
+  min-width: 1550px;
+  margin-top: 20px;
 }
+

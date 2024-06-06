@@ -61,7 +61,7 @@ const App = () => {
         <section ref={aboutRef} id="about" className="about-section">
           {activeSection === 'about' && <AboutUs />}
         </section>
-        <div ref={footerRef} id="footer">
+        <div ref={footerRef} id="footer" className='footer'>
           {activeSection === 'footer' && <Footer />}
         </div>
       </main>
