@@ -6,7 +6,7 @@ import logo4 from '../assets/logo4.png';
 
 const Services = () => {
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <h2>Advantages Of Our <strong>Services</strong></h2>
       <div className="services">
         <div className="service">

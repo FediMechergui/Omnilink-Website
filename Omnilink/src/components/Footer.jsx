@@ -7,7 +7,7 @@ import linkedinIcon from '../assets/linkedin-logo.png';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id='footer' className="footer">
       <div className="footer-banner" style={{ backgroundImage: `url(${bannerImage})` }}>
       </div>
       <div className="footer-bottom">

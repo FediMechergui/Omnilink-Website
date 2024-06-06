@@ -3,7 +3,7 @@ import mainImage from '../assets/main.png';
 
 const MainSection = () => {
   return (
-    <section className="main-section">
+    <section id="main" className="main-section">
       <div className="content">
         <h2>Unlocking Potential, Powering Progress</h2>
         <hr className="separator" />
