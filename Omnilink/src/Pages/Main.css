@@ -1,0 +1,95 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  color-scheme: light dark;
+  background: linear-gradient(135deg, #FFFFFF 22%, #1F4496 100%);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #FFFFFF 22%, #1F4496 100%);
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0;
+}
+
+nav li {
+  cursor: pointer;
+}
+
+main {
+  overflow: hidden;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.section.active {
+  opacity: 1;
+}
+
+.services-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  width: 100%;
+  background-color: transparent;
+  padding: 20px 0;
+}
+
+.main-section, .about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer {
+  justify-content: center;
+  border-bottom: none;
+}
