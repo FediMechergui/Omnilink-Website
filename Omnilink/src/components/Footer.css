@@ -1,9 +1,10 @@
+
 .footer {
   width: 100%;
   text-align: center;
   font-family: Arial, sans-serif;
   color: transparent;
-  margin-top: 20px;
+  margin-top: 2%;
 }
 
 .footer-banner {
@@ -14,34 +15,34 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  height: 370px; 
+  height: 37%;
 }
 
 .footer-bottom {
   background-color: #29337A;
-  padding: 20px 0;
+  padding: 2% 0;
 }
 
 .footer-logo-small {
-  height: 50px;
-  margin-bottom: 10px;
+  height: 5%;
+  margin-bottom: 1%;
 }
 
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 1.5%;
+  margin-top: 1%;
 }
 
 .social-link {
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .footer-copyright {
-  font-size: 14px;
-  margin-top: 10px;
+  font-size: 1.4rem;
+  margin-top: 1%;
   color: #fff;
 }

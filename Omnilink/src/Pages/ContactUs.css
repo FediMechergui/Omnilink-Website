@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(145deg, #edf4ff, #748bbe);
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us-section {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 3rem;
+  color: #29337a;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  color: #29337a;
+  margin-bottom: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: left; /* Left-align the entire container */
+}
+
+.contact-info {
+  background-color: #274395;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  min-width: 40%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.contact-info h2 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.info-item i {
+  margin-right: 0.5rem;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  margin-top: 12rem;
+}
+
+.social-icon {
+  width: 30px; 
+  height: 30px; 
+  cursor: pointer;
+}
+
+.contact-form {
+  background: white;
+  padding: 2rem;
+  flex: 1;
+  max-width: 40%;
+  margin-left: 50%;
+}
+
+.contact-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form .form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #29337a;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: transparent !important;
+  color: #1d2d60;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form button {
+  background: #29337a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1d2d60;
+}

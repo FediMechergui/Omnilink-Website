@@ -3,37 +3,39 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; 
-  padding: 10px 20px;
+  align-items: flex-end;
+  padding: 1% 2%;
   font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
-  width: 98%;
+  width: 96%;
   z-index: 1000;
+  background-color: transparent !important;
 }
 
 .logo img {
-  height: 60px;
+  height: 6%;
 }
 
 .navigation {
   flex-grow: 1;
-  margin-left: 20px;
+  margin-left: 2%;
 }
 
 .navigation a {
-  margin: 0 20px;
+  margin: 0 2%;
   text-decoration: none;
   color: #003399;
   font-weight: 700;
-  font-size: 20px;
-  display: inline-block; 
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer !important;
 }
 
 .social-icons {
   display: flex;
-  align-items: flex-end; 
+  align-items: flex-end;
 }
 
 .social-icons a {
@@ -42,5 +44,5 @@
 }
 
 .social-icons img {
-  height: 25px;
+  height: 3%;
 }
