@@ -51,7 +51,7 @@ const Header = () => {
           About us
         </Link>
         <Link
-          to="footer"
+          to="contact"
           smooth={true}
           duration={500}
         >
