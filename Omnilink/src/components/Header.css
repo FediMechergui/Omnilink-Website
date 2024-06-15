@@ -28,7 +28,7 @@
   text-decoration: none;
   color: #003399;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: inline-block;
   cursor: pointer !important;
 }
@@ -46,3 +46,36 @@
 .social-icons img {
   height: 3%;
 }
+
+/* Mobile Styles */
+.hamburger-menu {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 30px; /* Increase size for better visibility */
+  color: #003399; /* Match the color scheme */
+}
+
+@media (max-width: 768px) {
+ .hamburger-menu {
+    display: block;
+  }
+  
+ .navigation {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+ .navigation.active {
+    display: flex;
+  }
+}
+

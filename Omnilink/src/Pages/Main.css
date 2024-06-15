@@ -1,29 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&family=Russo+One&display=swap');
-
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
+.app-container {
+  position: relative;
   overflow: hidden;
 }
 
-.section {
-  min-height: 100vh;
+.navbar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.sections {
+  margin-top: 60px; /* Adjust based on the height of your navbar */
+}
+
+.section-container {
+  max-width: 100%; /* Adjust based on your design preference */
+  margin: auto; /* Center the container */
+  margin-top: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+}
+
+.content-wrapper {
+  transform: scale(0.8); /* Scale content to 80% */
+  width: 125%; /* Compensate for the scaling */
 }
 
 .fade-in {
   opacity: 1;
+  transition: opacity 0.5s ease-in;
 }
 
 .fade-out {
   opacity: 0;
+  transition: opacity 0.5s ease-out;
 }

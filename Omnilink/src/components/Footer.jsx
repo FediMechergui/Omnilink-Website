@@ -8,7 +8,8 @@ import linkedinIcon from '../assets/linkedin-logo.png';
 const Footer = () => {
   return (
     <footer id='footer' className="footer">
-      <div className="footer-banner" style={{ backgroundImage: `url(${bannerImage})` }}>
+      <div className="footer-banner">
+        <img src={bannerImage} alt="Omnilink Banner" />
       </div>
       <div className="footer-bottom">
         <img src={smallLogo} alt="Omnilink Logo" className="footer-logo-small" />

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Header.css';
 import logo from '../assets/omnilink logo 1.png';
 import facebookIcon from '../assets/facebook-logo.png';
@@ -6,12 +7,19 @@ import linkedinIcon from '../assets/linkedin-logo.png';
 import { Link } from 'react-scroll';
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className="header">
       <div className="logo">
         <img src={logo} alt="OMNILINK Logo" />
       </div>
-      <nav className="navigation">
+      <button onClick={toggleMenu} className="hamburger-menu">☰</button>
+      <nav className={`navigation ${menuOpen? 'active' : ''}`}>
         <Link
           activeClass="active"
           to="main"

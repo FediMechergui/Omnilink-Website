@@ -18,6 +18,10 @@
   height: 37%;
 }
 
+.footer-banner img {
+  width: 100%;
+}
+
 .footer-bottom {
   background-color: #29337A;
   padding: 2% 0;
