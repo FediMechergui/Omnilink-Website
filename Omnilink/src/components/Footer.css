@@ -1,4 +1,3 @@
-
 .footer {
   width: 100%;
   text-align: center;
@@ -15,38 +14,39 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  height: 37%;
+  height: 8%; /* Adjusted banner height */
 }
 
 .footer-banner img {
   width: 100%;
+  height: 100%; /* Stretch the image to fit the banner */
 }
 
 .footer-bottom {
   background-color: #29337A;
-  padding: 2% 0;
+  padding: 0.3% 0; /* Further reduced padding */
 }
 
 .footer-logo-small {
-  height: 5%;
-  margin-bottom: 1%;
+  height: 2.5%; /* Smaller logo height */
+  margin-bottom: 0.2%; /* Reduced margin */
 }
 
 .footer-social {
   display: flex;
   justify-content: center;
-  gap: 1.5%;
-  margin-top: 1%;
+  gap: 3%; /* Smaller gap between social icons */
+  margin-top: 0.2%; /* Further reduced top margin */
 }
 
 .social-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 0.8rem; /* Smaller font size for social icons */
 }
 
 .footer-copyright {
-  font-size: 1.4rem;
-  margin-top: 1%;
+  font-size: 0.8rem; /* Smaller font size for copyright */
+  margin-top: 0.2%; /* Further reduced top margin */
   color: #fff;
 }

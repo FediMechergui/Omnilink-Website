@@ -11,7 +11,7 @@ const MainSection = () => {
         <p>
           We specialize in developing and implementing innovative solutions that leverage the power of <strong>AI</strong> and enhance <strong>IoT</strong> ecosystems.
         </p>
-        <button>Contact Us</button>
+        <button>CONTACT US</button>
       </div>
       <div className="image">
         <img src={mainImage} alt="OMNILINK" />

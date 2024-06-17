@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import logo from '../assets/omnilink logo 1.png';
 import facebookIcon from '../assets/facebook-logo.png';
 import instagramIcon from '../assets/instagram-logo.png';
 import linkedinIcon from '../assets/linkedin-logo.png';
-import { Link } from 'react-scroll';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,52 +16,34 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={logo} alt="OMNILINK Logo" />
+        <a href="#main">
+          <img src={logo} alt="OMNILINK Logo" style={{ height: '50px' }} />
+        </a>
       </div>
-      <button onClick={toggleMenu} className="hamburger-menu">☰</button>
-      <nav className={`navigation ${menuOpen? 'active' : ''}`}>
-        <Link
-          activeClass="active"
-          to="main"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-        >
-          Home
-        </Link>
-        <Link
-          activeClass="active"
-          to="services"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-        >
+      <button onClick={toggleMenu} className="hamburger-menu btn">
+        ☰
+      </button>
+      <nav className={`navigation ${menuOpen ? 'active' : ''}`}>
+        <a href="#services" className="nav-link">
           Services
-        </Link>
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-60}
-          duration={500}
-        >
+        </a>
+        <a href="#about" className="nav-link">
           About us
-        </Link>
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-        >
+        </a>
+        <a href="#contact" className="nav-link">
           Contact us
-        </Link>
+        </a>
       </nav>
       <div className="social-icons">
-        <a href="https://facebook.com"><img src={facebookIcon} alt="Facebook" /></a>
-        <a href="https://instagram.com"><img src={instagramIcon} alt="Instagram" /></a>
-        <a href="https://linkedin.com"><img src={linkedinIcon} alt="LinkedIn" /></a>
+        <a href="https://facebook.com">
+          <img src={facebookIcon} alt="Facebook" style={{ height: '30px' }} />
+        </a>
+        <a href="https://instagram.com">
+          <img src={instagramIcon} alt="Instagram" style={{ height: '30px' }} />
+        </a>
+        <a href="https://linkedin.com">
+          <img src={linkedinIcon} alt="LinkedIn" style={{ height: '30px' }} />
+        </a>
       </div>
     </header>
   );

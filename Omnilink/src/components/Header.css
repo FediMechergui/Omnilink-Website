@@ -4,65 +4,90 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 1% 2%;
+  padding: 1%;
   font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
-  width: 96%;
+  width: 100%;
   z-index: 1000;
-  background-color: transparent !important;
+  background-color: rgba(73, 84, 159, 0.257);
+  transition: background-color 0.5s ease, backdrop-filter 0.5s ease; /* Added backdrop-filter transition */
+}
+
+.header.scrolled {
+  background-color: rgba(66, 111, 216, 0.645);
+  backdrop-filter: blur(5px); 
+}
+
+.logo {
+  display: flex;
+  width: auto; /* Adjust width */
+  height:  auto; /* Adjust height */
 }
 
 .logo img {
-  height: 6%;
+  width: 250%;
+  height: 250%;
+  object-fit: contain; 
+  cursor: pointer;
 }
 
 .navigation {
   flex-grow: 1;
-  margin-left: 2%;
+  margin-left: 8%;
+  display: flex-end; /* Added display property */
+  align-items: center;
+  gap:25px; /* Added align-items property */
 }
 
 .navigation a {
-  margin: 0 2%;
+  margin: 0 10px;
   text-decoration: none;
   color: #003399;
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 550;
+  font-size: 1.3rem;
   display: inline-block;
-  cursor: pointer !important;
+  cursor: pointer;
+  gap: 30px;
 }
 
 .social-icons {
   display: flex;
   align-items: flex-end;
+  gap: 30px;
+  margin-right: 20px;
 }
 
 .social-icons a {
-  margin: 0 10px;
   color: #003399;
+  cursor: pointer;
 }
 
 .social-icons img {
-  height: 3%;
+  height: 25px;
+  cursor: pointer;
 }
 
-/* Mobile Styles */
 .hamburger-menu {
-  display: none; /* Initially hidden */
+  display: none;
   cursor: pointer;
   background: none;
   border: none;
-  font-size: 30px; /* Increase size for better visibility */
-  color: #003399; /* Match the color scheme */
+  font-size: 30px;
+  color: #003399;
 }
 
 @media (max-width: 768px) {
- .hamburger-menu {
+  .header {
+    backdrop-filter: blur(5px); /* Added blur effect for small screens */
+  }
+
+  .hamburger-menu {
     display: block;
   }
-  
- .navigation {
+
+  .navigation {
     display: none;
     flex-direction: column;
     position: absolute;
@@ -74,8 +99,13 @@
     background-color: rgba(255, 255, 255, 0.9);
   }
 
- .navigation.active {
+  .navigation.active {
     display: flex;
   }
-}
 
+  .navigation a {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}

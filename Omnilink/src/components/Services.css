@@ -5,7 +5,10 @@
   padding: 2%;
   font-family: "Roboto", sans-serif;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: flex-start;
 }
 
 .services-section h2 {
@@ -25,6 +28,7 @@ strong {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .service {
@@ -36,11 +40,11 @@ strong {
   max-width: 30%;
   border-radius: 10px;
   box-shadow: 0 0.4% 0.6% rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: left; /* Align text to the left */
 }
 
 .service h3 {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   margin-bottom: 1%;
   font-family: "Russo One", sans-serif;
   font-weight: 700;
@@ -49,6 +53,7 @@ strong {
 .service p {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 1.5%; /* Add margin to separate paragraphs */
 }
 
 .box {
@@ -84,8 +89,13 @@ strong {
 }
 
 @media (max-width: 768px) {
+  .services-section {
+    min-height: auto; /* Adjust min-height for smaller screens */
+  }
+
   .service {
-    max-width: 90%;
+    max-width: 50%; /* Change to 50% for 2x2 matrix */
+    margin: 1%;
     padding: 2%;
   }
 
@@ -108,6 +118,10 @@ strong {
 }
 
 @media (max-width: 480px) {
+  .services-section {
+    min-height: auto; /* Adjust min-height for smaller screens */
+  }
+
   .service {
     max-width: 100%;
     margin: 2% 0;
