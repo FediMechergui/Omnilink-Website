@@ -148,68 +148,53 @@ h1 {
 }
 
 /* Media Queries for Responsiveness */
-@media (min-width: 768px) {
-  .contact-container {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .contact-info {
-    width: 40%;
-    position: relative;
-  }
-  
-  .contact-form {
-    width: 50%;
-    margin-left: auto;
+/* General Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 0; /* Reduce padding for mobile */
   }
 
-  .contact-form .form-row {
-    flex-direction: row;
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .info-item {
-    display: flex;
-    align-items: center;
-    margin-top: 1rem; /* Keeps the initial margin-top */
-  }
-  
-  .info-item +.info-item {
-    margin-top: 10px; /* Adds a 40px margin between consecutive.info-item elements */
+ .contact-us-section {
+    padding: 1rem; /* Reduce padding for mobile */
   }
 
-  .contact-info {
-    width: 40%;
-    position: relative;
-    max-height: 300px
-    ;
+ .contact-container {
+    flex-direction: column; /* Stack items vertically on mobile */
   }
 
-  .social-media {
-    display: flex;
-    gap: 30px;
-    margin-top: 30px;
-    justify-content: left; 
+ .contact-info {
+    width: 100%; /* Take full width on mobile */
+    margin-bottom: 1rem; /* Add some space below info section */
   }
 
-  .contact-form {
-    width: 100%;
-    padding: 1rem;
+ .contact-form {
+    width: 100%; /* Full width on mobile */
   }
 
-  .contact-form label {
-    font-size: 0.9rem;
+ .contact-form.form-row {
+    flex-direction: column; /* Stack form inputs vertically on mobile */
   }
 
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.9rem;
+ .info-item {
+    margin-top: 0.5rem; /* Reduce margin-top for mobile */
   }
 
-  .contact-form button {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
+ .social-media {
+    margin-top: 0.5rem; /* Reduce margin-top for mobile */
+  }
+
+ .social-icon {
+    width: 16px; /* Reduce icon size for mobile */
+    height: 16px;
+  }
+
+ .contact-form input,
+ .contact-form textarea {
+    font-size: 0.8rem; /* Reduce font size for mobile */
+  }
+
+ .contact-form button {
+    font-size: 0.8rem; /* Reduce button font size for mobile */
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
   }
 }

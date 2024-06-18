@@ -7,6 +7,8 @@ import './Main.css';
 
 const Main = () => {
   return (
+
+    <>
     <div className="app-container">
       
       <main className="content-wrapper">
@@ -23,8 +25,10 @@ const Main = () => {
           </section>
         </div>
       </main>
+      
+      </div>
       <Footer />
-    </div>
+      </>
   );
 };
 

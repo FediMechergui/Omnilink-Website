@@ -2,10 +2,10 @@
 
 .about-us-section {
   color: #29337A;
-  padding: 0.8rem; /* Reduced padding */
-  margin: 0.8rem; /* Reduced margin */
-  margin-bottom: 2.5rem; /* Slightly reduced margin-bottom */
-  margin-top: 4.5rem; /* Slightly reduced margin-top */
+  padding: 0.8rem;
+  margin: 0.8rem;
+  margin-bottom: 2.5rem;
+  margin-top: 4.5rem;
 }
 
 h1 {
@@ -74,4 +74,39 @@ h1 {
   font-size: 1.8rem; /* Reduced font size */
   color: #29337A;
   font-family: 'Montserrat', sans-serif;
+}
+
+/* Existing CSS */
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+ .about-us-section {
+    padding: 0.5rem; /* Reduce padding further for smaller screens */
+    margin: 0.5rem; /* Reduce margin for smaller screens */
+    margin-bottom: 1.5rem; /* Further reduce bottom margin */
+    margin-top: 3rem; /* Further reduce top margin */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Reduce font size for smaller screens */
+  }
+
+ .tags {
+    flex-wrap: wrap; /* Allow tags to wrap onto next line if necessary */
+    gap: 0.2rem; /* Reduce gap between tags for smaller screens */
+  }
+
+ .tag {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    padding: 0.3rem 0.6rem; /* Reduce padding for smaller screens */
+  }
+
+ .description {
+    padding: 0.8rem; /* Reduce padding for smaller screens */
+  }
+
+ .description p {
+    font-size: 1.5rem; /* Reduce paragraph font size for smaller screens */
+  }
 }

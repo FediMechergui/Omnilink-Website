@@ -16,9 +16,4 @@
   align-items: flex-start;
 }
 
-/* Increase padding on smaller screens */
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
- .content-wrapper {
-    padding: 50px; /* Double the original padding */
-  }
-}
+
