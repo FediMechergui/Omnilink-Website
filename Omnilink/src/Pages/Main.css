@@ -4,7 +4,7 @@
 }
 
 .content-wrapper {
-  padding: 0 15px; /* Adjust the padding to create space on the sides */
+  padding: 0 15px; 
   margin: 0 auto; /* Center the content horizontally */
   max-width: calc(100% - 40px); /* Whole page width minus 20px on each side */
 }
@@ -14,4 +14,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* Increase padding on smaller screens */
+@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+ .content-wrapper {
+    padding: 50px; /* Double the original padding */
+  }
 }

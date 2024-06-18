@@ -6,6 +6,7 @@ import linkedinIcon from '../assets/linkedin-logo.png';
 import phoneIcon from '../assets/phone-call.png';
 import emailIcon from '../assets/email.png';
 import './ContactUs.css';
+import Header from "../components/Header";
 
 const ContactUs = () => {
   const [firstName, setFirstName] = useState("");
@@ -50,81 +51,84 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-us-section">
-      <h1>Contact Us</h1>
-      <p className="subheading">Want to contact us? Just write us a message!</p>
-      <div className="contact-container">
-        <div className="contact-info">
-          <h2>Contact Information</h2>
-          <p>Say something to start a live chat!</p>
-          <div className="info-item">
-            <img src={phoneIcon} alt="Phone" />
-            <span>+1012 3456 789</span>
+    <>
+      <Header />
+      <div className="contact-us-section">
+        <h1>Contact Us</h1>
+        <p className="subheading">Want to contact us? Just write us a message!</p>
+        <div className="contact-container">
+          <div className="contact-info">
+            <h2>Contact Information</h2>
+            <p>Say something to start a live chat!</p>
+            <div className="info-item">
+              <img src={phoneIcon} alt="Phone" />
+              <span>+1012 3456 789</span>
+            </div>
+            <div className="info-item">
+              <img src={emailIcon} alt="Email" />
+              <span>omnilink@gmail.com</span>
+            </div>
+            <div className="social-media">
+              <img src={facebookIcon} alt="Facebook" className="social-icon" />
+              <img src={instagramIcon} alt="Instagram" className="social-icon" />
+              <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+            </div>
           </div>
-          <div className="info-item">
-            <img src={emailIcon} alt="Email" />
-            <span>omnilink@gmail.com</span>
-          </div>
-          <div className="social-media">
-            <img src={facebookIcon} alt="Facebook" className="social-icon" />
-            <img src={instagramIcon} alt="Instagram" className="social-icon" />
-            <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
-          </div>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-row">
+              <div className="form-group">
+                <label>First Name</label>
+                <input 
+                  type="text" 
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  required 
+                />
+              </div>
+              <div className="form-group">
+                <label>Last Name</label>
+                <input 
+                  type="text" 
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  required 
+                />
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="form-group">
+                <label>Email</label>
+                <input 
+                  type="email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required 
+                />
+              </div>
+              <div className="form-group">
+                <label>Phone Number</label>
+                <input 
+                  type="text" 
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  required 
+                />
+              </div>
+            </div>
+            <div className="form-group">
+              <label>Message</label>
+              <textarea 
+                placeholder="Write your message.." 
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-row">
-            <div className="form-group">
-              <label>First Name</label>
-              <input 
-                type="text" 
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                required 
-              />
-            </div>
-            <div className="form-group">
-              <label>Last Name</label>
-              <input 
-                type="text" 
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                required 
-              />
-            </div>
-          </div>
-          <div className="form-row">
-            <div className="form-group">
-              <label>Email</label>
-              <input 
-                type="email" 
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required 
-              />
-            </div>
-            <div className="form-group">
-              <label>Phone Number</label>
-              <input 
-                type="text" 
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                required 
-              />
-            </div>
-          </div>
-          <div className="form-group">
-            <label>Message</label>
-            <textarea 
-              placeholder="Write your message.." 
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              required
-            ></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
+      </div>  
+    </>
   );
 };
 

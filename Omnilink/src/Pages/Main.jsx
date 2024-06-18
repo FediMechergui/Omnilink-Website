@@ -2,17 +2,17 @@ import Header from '../components/Header';
 import MainSection from '../components/MainSection';
 import Services from '../components/Services';
 import AboutUs from '../components/AboutUs';
-import ContactUs from './ContactUs';
 import Footer from '../components/Footer';
 import './Main.css';
 
 const Main = () => {
   return (
     <div className="app-container">
-      <Header />
+      
       <main className="content-wrapper">
+      <Header />
         <div className="content-inner">
-          <section id="main">
+          <section id="home">
             <MainSection />
           </section>
           <section id="services">
@@ -22,7 +22,6 @@ const Main = () => {
             <AboutUs />
           </section>
         </div>
-        
       </main>
       <Footer />
     </div>

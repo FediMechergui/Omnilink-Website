@@ -11,50 +11,51 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(73, 84, 159, 0.257);
-  transition: background-color 0.5s ease, backdrop-filter 0.5s ease; /* Added backdrop-filter transition */
+  background-color: rgba(255, 255, 255, 0.257);
+  backdrop-filter: blur(5px);
+  transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
 }
 
 .header.scrolled {
-  background-color: rgba(66, 111, 216, 0.645);
-  backdrop-filter: blur(5px); 
+  background-color: #426fe8;
+  backdrop-filter: blur(5px);
 }
 
-.logo {
-  display: flex;
-  width: auto; /* Adjust width */
-  height:  auto; /* Adjust height */
+.logo{
+  margin-left: 50px;
 }
-
 .logo img {
-  width: 250%;
-  height: 250%;
-  object-fit: contain; 
+  width: auto;
+  height: 80px;
+  object-fit: cover;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .navigation {
   flex-grow: 1;
-  margin-left: 8%;
-  display: flex-end; /* Added display property */
-  align-items: center;
-  gap:25px; /* Added align-items property */
+  margin-left: 50px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
 }
 
 .navigation a {
-  margin: 0 10px;
   text-decoration: none;
   color: #003399;
   font-weight: 550;
   font-size: 1.3rem;
   display: inline-block;
   cursor: pointer;
-  gap: 30px;
+}
+
+.navigation a:hover {
+  color: #add8e6;
 }
 
 .social-icons {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 30px;
   margin-right: 20px;
 }
@@ -79,31 +80,34 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    backdrop-filter: blur(5px); /* Added blur effect for small screens */
+ .header {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.478);
   }
 
-  .hamburger-menu {
+ .hamburger-menu {
     display: block;
   }
 
-  .navigation {
+ .navigation {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: absolute; 
     align-items: center;
     justify-content: center;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.478);
+    backdrop-filter: blur(5px); /* Apply blur effect */
   }
 
-  .navigation.active {
+ .navigation.active {
     display: flex;
+    flex-direction: column;
   }
 
-  .navigation a {
+ .navigation a {
     margin: 10px 0;
     font-size: 1.2rem;
     font-weight: 500;
