@@ -4,10 +4,18 @@
 }
 
 .content-wrapper {
-  padding: 0 15px; 
+  padding: 0 15px; /* Standard padding */
   margin: 0 auto; /* Center the content horizontally */
   max-width: calc(100% - 40px); /* Whole page width minus 20px on each side */
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+ .content-wrapper {
+    padding: 0 10px; /* Reduce padding for smaller screens */
+  }
+}
+
 
 .content-inner {
   width: 100%;
