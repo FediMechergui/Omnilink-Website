@@ -16,6 +16,11 @@
   }
 }
 
+@media (max-width: 480px) {
+  section {
+    font-size: 0.9em; /* Reduce base font size for mobile */
+  }
+}
 
 .content-inner {
   width: 100%;
