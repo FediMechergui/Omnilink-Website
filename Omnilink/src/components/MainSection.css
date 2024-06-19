@@ -74,8 +74,9 @@
 @media (max-width: 768px) {
   .main-section {
     flex-direction: column; /* Stack content on top of image */
-    padding: 4%; /* Reduce padding */
+    padding: 4%; /* Existing padding */
     height: auto; /* Adjust height for content wrapping */
+    padding-top: 80px; /* Additional padding-top to avoid overlap with navbar */
   }
 
   .content {
@@ -113,7 +114,7 @@
 
 @media (max-width: 480px) {
   .main-section {
-    padding: 3%; /* Further reduce padding */
+    padding-top: 60px; /* Slightly less padding-top for even smaller screens */
   }
 
   .content h2 {
