@@ -3,8 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 1%;
+  align-items: flex-end; /* Center align items */
   font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 0;
@@ -16,27 +15,37 @@
   transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
 }
 
+nav{
+  margin-left: 40px;
+}
+
 .header.scrolled {
-  background-color: #426fe8;
+  background-color: rgba(255, 255, 255, 0.793);
   backdrop-filter: blur(5px);
 }
 
-.logo{
-  margin-left: 50px;
+.logo {
+  margin-left: 40px;
 }
+
 .logo img {
   width: auto;
-  height: 80px;
+  height: 80px; /* Large logo height */
   object-fit: cover;
   cursor: pointer;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
   margin-right: 20px;
 }
 
 .navigation {
-  flex-grow: 1;
-  margin-left: 50px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 20px;
 }
 
@@ -45,7 +54,6 @@
   color: #003399;
   font-weight: 550;
   font-size: 1.3rem;
-  display: inline-block;
   cursor: pointer;
 }
 
@@ -56,8 +64,7 @@
 .social-icons {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin-right: 20px;
+  gap: 30px; /* Adjust gap for social icons */
 }
 
 .social-icons a {
@@ -70,7 +77,6 @@
   cursor: pointer;
 }
 
-/* Existing CSS */
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -80,59 +86,55 @@
   color: #003399;
 }
 
-.navigation {
-  flex-grow: 1;
-  margin-left: 50px;
-  display: flex;
-  align-items: flex-end;
-  gap: 20px;
-}
-
-/* New CSS for Mobile Responsiveness */
 @media (max-width: 768px) {
- .hamburger-menu {
+  .hamburger-menu {
     display: block;
   }
 
- .navigation {
+  .navigation-container {
     display: none;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: center;
     top: 100%;
     left: 0;
-    width: 100%; /* Ensure it takes the full width */
-    background-color: rgba(255, 255, 255, 0.478);
+    width: 100%;
+    z-index: 100; /* Adjusted z-index */
+    background-color: rgba(255, 255, 255, 0.793);
     backdrop-filter: blur(5px);
   }
 
- .navigation.active {
-    display: flex;
-    flex-direction: column;
+  .header{
+    background-color: rgba(255, 255, 255, 0.793);
   }
 
- .navigation a {
+  .navigation-container.active {
+    display: flex;
+  }
+
+  .logo img {
+    height: 40px; /* Reduced logo height for small screens */
+  }
+
+  .logo {
+    margin-left: 10px; /* Reduced margin */
+  }
+
+  .navigation {
+    flex-direction: column; /* Make the navigation links stack vertically */
+    width: 100%; /* Take full width */
+    align-items: center; /* Center align the items */
+  }
+
+  .navigation a {
     margin: 10px 0;
     font-size: 1.2rem;
     font-weight: 500;
   }
 
-  /* Include Social Icons in the Collapsed Menu */
- .social-icons {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Smaller gap for mobile */
-    margin-bottom: 20px; /* Add some spacing before the links */
-  }
-
- .social-icons a {
-    color: #003399;
-    cursor: pointer;
-  }
-
- .social-icons img {
-    height: 20px; /* Slightly smaller icon size for mobile */
-    cursor: pointer;
+  .social-icons img {
+    height: 20px;
+    margin-left: 30px;
   }
 }

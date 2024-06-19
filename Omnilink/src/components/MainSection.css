@@ -114,7 +114,7 @@
 
 @media (max-width: 480px) {
   .main-section {
-    padding-top: 60px; /* Slightly less padding-top for even smaller screens */
+    padding-top: 100px; /* Slightly less padding-top for even smaller screens */
   }
 
   .content h2 {

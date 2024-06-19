@@ -151,11 +151,11 @@ h1 {
 /* General Responsiveness */
 @media (max-width: 768px) {
   body {
-    padding: 20px 0; /* Reduce padding for mobile */
+    padding: 50px 0; /* Reduce padding for mobile */
   }
 
  .contact-us-section {
-    padding: 1rem; /* Reduce padding for mobile */
+    padding: 80px; /* Reduce padding for mobile */
   }
 
  .contact-container {
@@ -164,7 +164,11 @@ h1 {
 
  .contact-info {
     width: 100%; /* Take full width on mobile */
-    margin-bottom: 1rem; /* Add some space below info section */
+    min-height: unset;
+  }
+
+  .contact-info h2 {
+    font-size: 1.4rem;
   }
 
  .contact-form {
@@ -176,16 +180,16 @@ h1 {
   }
 
  .info-item {
-    margin-top: 0.5rem; /* Reduce margin-top for mobile */
+    margin-top: 40px; /* Reduce margin-top for mobile */
   }
 
  .social-media {
-    margin-top: 0.5rem; /* Reduce margin-top for mobile */
+    margin-top: 2rem; /* Reduce margin-top for mobile */
   }
 
  .social-icon {
-    width: 16px; /* Reduce icon size for mobile */
-    height: 16px;
+    width: 100%; /* Reduce icon size for mobile */
+    height: 100%;
   }
 
  .contact-form input,
