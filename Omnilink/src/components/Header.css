@@ -10,7 +10,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.257);
+  background-color: transparent;
   backdrop-filter: blur(5px);
   transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
 }
@@ -25,12 +25,12 @@ nav{
 }
 
 .logo {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 .logo img {
   width: auto;
-  height: 80px; /* Large logo height */
+  height: 65px; /* Large logo height */
   object-fit: cover;
   cursor: pointer;
 }
@@ -136,5 +136,7 @@ nav{
   .social-icons img {
     height: 20px;
     margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
