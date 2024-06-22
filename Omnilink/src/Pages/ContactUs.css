@@ -29,9 +29,8 @@ h1 {
 
 .contact-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row; /* Display side by side on larger screens */
+  justify-content: space-between; /* Add space between the items */
   gap: 1rem;
   background-color: white;
   padding: 2rem;
@@ -39,7 +38,6 @@ h1 {
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
   position: relative;
   max-width: 90%;
-  min-height: max-content;
   margin: 0 auto;
   text-align: left;
 }
@@ -50,8 +48,7 @@ h1 {
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
-  width: 100%;
-  min-height: 700px;
+  width: 48%; /* Adjust width for side by side display */
 }
 
 .contact-info h2 {
@@ -65,10 +62,9 @@ h1 {
   margin-top: 8rem; /* Keeps the initial margin-top */
 }
 
-.info-item +.info-item {
-  margin-top: 40px; /* Adds a 40px margin between consecutive.info-item elements */
+.info-item + .info-item {
+  margin-top: 40px; /* Adds a 40px margin between consecutive .info-item elements */
 }
-
 
 .info-item img {
   margin-right: 0.5rem;
@@ -82,23 +78,22 @@ h1 {
   justify-content: left; 
 }
 
-
 .social-icon {
   width: auto;
   height: auto;
   cursor: pointer;
 }
 
-
 .contact-form {
   background: white;
   padding: 2rem;
-  width: 100%;
+  width: 48%; /* Adjust width for side by side display */
+  border-radius: 15px;
 }
 
 .contact-form .form-row {
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -154,16 +149,16 @@ h1 {
     padding: 50px 0; /* Reduce padding for mobile */
   }
 
- .contact-us-section {
+  .contact-us-section {
     padding: 80px; /* Reduce padding for mobile */
   }
 
- .contact-container {
+  .contact-container {
     flex-direction: column; /* Stack items vertically on mobile */
   }
 
- .contact-info {
-    width: 100%; /* Take full width on mobile */
+  .contact-info, .contact-form {
+    width: 100%; /* Full width on mobile */
     min-height: unset;
   }
 
@@ -171,33 +166,29 @@ h1 {
     font-size: 1.4rem;
   }
 
- .contact-form {
-    width: 100%; /* Full width on mobile */
-  }
-
- .contact-form.form-row {
+  .contact-form.form-row {
     flex-direction: column; /* Stack form inputs vertically on mobile */
   }
 
- .info-item {
+  .info-item {
     margin-top: 40px; /* Reduce margin-top for mobile */
   }
 
- .social-media {
+  .social-media {
     margin-top: 2rem; /* Reduce margin-top for mobile */
   }
 
- .social-icon {
+  .social-icon {
     width: 100%; /* Reduce icon size for mobile */
     height: 100%;
   }
 
- .contact-form input,
- .contact-form textarea {
+  .contact-form input,
+  .contact-form textarea {
     font-size: 0.8rem; /* Reduce font size for mobile */
   }
 
- .contact-form button {
+  .contact-form button {
     font-size: 0.8rem; /* Reduce button font size for mobile */
     padding: 0.5rem 1rem; /* Adjust padding for mobile */
   }
