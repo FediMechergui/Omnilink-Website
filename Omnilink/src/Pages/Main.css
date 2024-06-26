@@ -12,13 +12,13 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
  .content-wrapper {
-    padding: 0 10px; /* Reduce padding for smaller screens */
+    padding: 0 40px; /* Reduce padding for smaller screens */
   }
 }
 
 @media (max-width: 480px) {
   section {
-    font-size: 0.9em; /* Reduce base font size for mobile */
+    font-size: 0.8em; /* Reduce base font size for mobile */
   }
 }
 
@@ -29,4 +29,20 @@
   align-items: flex-start;
 }
 
+/* Add margin between sections */
+section {
+  margin-bottom: 40px;
+}
 
+/* Remove bottom margin for the last section */
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  section {
+    font-size: 0.9em; /* Reduce base font size for mobile */
+    margin-bottom: 40px; /* Ensure the margin is consistent across all screen sizes */
+  }
+}
