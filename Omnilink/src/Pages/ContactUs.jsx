@@ -64,7 +64,7 @@ const ContactUs = () => {
             <p>Say something to start a live chat!</p>
             <div className="info-item">
               <img src={phoneIcon} alt="Phone" />
-              <span>+1012 3456 789</span>
+              <span>+216 54 131 778</span>
             </div>
             <div className="info-item">
               <img src={emailIcon} alt="Email" />

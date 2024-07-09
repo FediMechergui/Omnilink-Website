@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(145deg, #edf4ff, #748bbe);
+  margin: 0;
+  padding: 70px 0 0 0;
+}
+
+.feedbacks-section {
+  text-align: center;
+  padding: 3rem;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 2.4rem;
+  color: #29337a;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  color: #1F4496;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.feedbacks-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  max-width: 50%; /* Adjust max-width for narrower form */
+  margin: 0 auto;
+  text-align: left;
+}
+
+.feedbacks-info {
+  background-color: #274395;
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+  margin-top: 1rem; /* Add margin-top for spacing */
+}
+
+.feedbacks-info h2 {
+  font-family: "Russo One", sans-serif;
+  font-size: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem; /* Adjust margin-top for info items */
+}
+
+.info-item img {
+  margin-right: 0.5rem;
+  width: 24px;
+}
+
+.info-item span {
+  display: inline-block;
+  vertical-align: middle; /* Align text vertically with icons */
+}
+
+.social-media {
+  display: flex;
+  gap: 20px; /* Reduce gap between icons */
+  margin-top: 2rem; /* Adjust margin-top */
+  justify-content: left;
+}
+
+.social-icon {
+  width: auto;
+  height: auto;
+  cursor: pointer;
+}
+
+.feedbacks-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.feedbacks-form .form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.feedbacks-form .form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.feedbacks-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #29337a;
+}
+
+.feedbacks-form input,
+.feedbacks-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #1d2d60;
+  border: none;
+  border-bottom: 1px solid #29337a;
+  border-radius: 0;
+}
+
+.feedbacks-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.feedbacks-form button {
+  background: #29337a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.feedbacks-form button:hover {
+  background: #1d2d60;
+}
+
+/* Media Queries for Responsiveness */
+/* General Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding: 60px 0; /* Reduce padding for mobile */
+  }
+
+  .feedbacks-section {
+    padding: 60px; /* Reduce padding for mobile */
+  }
+
+  .feedbacks-container {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .feedbacks-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .feedbacks-form .form-row {
+    flex-direction: column; /* Stack form inputs vertically on mobile */
+  }
+
+  .info-item {
+    margin-top: 1rem; /* Adjust margin-top for mobile */
+  }
+
+  .social-media {
+    margin-top: 2rem; /* Adjust margin-top for mobile */
+  }
+
+  .social-icon {
+    width: 100%; /* Adjust icon size for mobile */
+    height: 100%;
+  }
+
+  .feedbacks-form input,
+  .feedbacks-form textarea {
+    font-size: 0.8rem; /* Reduce font size for mobile */
+  }
+
+  .feedbacks-form button {
+    font-size: 0.8rem; /* Reduce button font size for mobile */
+    padding: 0.5rem 1rem; /* Adjust padding for mobile */
+  }
+}

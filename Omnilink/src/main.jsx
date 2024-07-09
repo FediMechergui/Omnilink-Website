@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import Main from './Pages/Main.jsx';
 import ContactUs from './Pages/ContactUs.jsx';
+import Feedbacks from './Pages/Feedbacks.jsx';
 import ReactGA from './analytics.js'; 
 
 
@@ -27,6 +28,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/feedbacks" element={<Feedbacks />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
