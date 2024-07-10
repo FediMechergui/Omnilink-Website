@@ -15,9 +15,9 @@ const Footer = () => {
         <img src={smallLogo} alt="Omnilink Logo" className="footer-logo-small" />
         <p className="footer-copyright">© 2024, All Rights Reserved</p>
         <div className="footer-social">
-        <a href="https://facebook.com"><img src={facebookIcon} alt="Facebook" /></a>
-        <a href="https://instagram.com"><img src={instagramIcon} alt="Instagram" /></a>
-        <a href="https://linkedin.com"><img src={linkedinIcon} alt="LinkedIn" /></a>
+        <a href="https://www.facebook.com/profile.php?id=61561164385301"><img src={facebookIcon} alt="Facebook" /></a>
+        <a href="https://www.instagram.com/omnilink.solutions/"><img src={instagramIcon} alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/company/omnilink-solutions/?trk=similar-pages&originalSubdomain=tn"><img src={linkedinIcon} alt="LinkedIn" /></a>
         </div>
       </div>
     </footer>

@@ -60,16 +60,17 @@ const Header = () => {
           <NavHashLink smooth to="/#services">Services</NavHashLink>
           <NavHashLink smooth to="/#about">About us</NavHashLink>
           <NavHashLink smooth to="/contact">Contact us</NavHashLink>
+          <NavHashLink smooth to="/feedbacks">Support</NavHashLink>
         </nav>
 
         <div className="social-icons">
-          <a href="https://facebook.com">
+          <a href="https://www.facebook.com/profile.php?id=61561164385301">
             <img src={getSocialIcon(facebookIcon, facebookIconDark)} alt="Facebook" />
           </a>
-          <a href="https://instagram.com">
+          <a href="https://www.instagram.com/omnilink.solutions/">
             <img src={getSocialIcon(instagramIcon, instagramIconDark)} alt="Instagram" />
           </a>
-          <a href="https://linkedin.com">
+          <a href="https://www.linkedin.com/company/omnilink-solutions/?trk=similar-pages&originalSubdomain=tn">
             <img src={getSocialIcon(linkedinIcon, linkedinIconDark)} alt="LinkedIn" />
           </a>
         </div>

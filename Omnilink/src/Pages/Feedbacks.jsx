@@ -90,9 +90,9 @@ const Feedbacks = () => {
                   onChange={(phone) => setPhoneNumber(phone)}
                   inputStyle={{
                       width: '100%',
-                    marginLeft: '2.5rem 0',
-                    padding: '0.5rem',
-                    height: '2.5rem',
+                    marginLeft: '2rem 0',
+                    padding: '1.5rem',
+                    height: '2rem',
                     border: '1px solid #ccc',
                     fontSize: '1rem',
                     backgroundColor: 'transparent',
@@ -139,7 +139,7 @@ const Feedbacks = () => {
             </div>
             <div className="social-media">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/profile.php?id=61561164385301"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -150,7 +150,7 @@ const Feedbacks = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/omnilink.solutions/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -161,7 +161,7 @@ const Feedbacks = () => {
                 />
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/omnilink-solutions/?trk=similar-pages&originalSubdomain=tn"
                 target="_blank"
                 rel="noopener noreferrer"
               >

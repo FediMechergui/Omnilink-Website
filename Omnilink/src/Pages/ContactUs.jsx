@@ -72,7 +72,7 @@ const ContactUs = () => {
             </div>
             <div className="social-media">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/profile.php?id=61561164385301"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -83,7 +83,7 @@ const ContactUs = () => {
                 />
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/omnilink.solutions/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -94,7 +94,7 @@ const ContactUs = () => {
                 />
               </a>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/omnilink-solutions/?trk=similar-pages&originalSubdomain=tn"
                 target="_blank"
                 rel="noopener noreferrer"
               >

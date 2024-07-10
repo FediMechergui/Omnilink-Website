@@ -3,7 +3,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end; /* Center align items */
+  align-items: flex-end;
   font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 0;
@@ -30,7 +30,7 @@ nav{
 
 .logo img {
   width: auto;
-  height: 65px; /* Large logo height */
+  height: 73px; /* Large logo height */
   object-fit: cover;
   cursor: pointer;
 }
